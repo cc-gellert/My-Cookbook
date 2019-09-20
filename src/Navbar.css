@@ -1,6 +1,21 @@
 .navbar {
-  justify-content: space-between;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  color: rgb(244, 91, 2);
+  background-color: rgba(250, 244, 60, 0.8);
+  text-decoration: none;
+  text-transform: uppercase;
+  height: 30px;
+  padding: 10px;
+  font-weight: bold; 
+}
+#navbar:focus, :hover, :visited, :link, :active {
+       text-decoration: none;
+       color: rgb(244, 91, 2);
 }
 .active-link {
-
+  text-decoration: underline;
+  color: rgb(161, 3, 3);
+  text-transform: uppercase;
 }

@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
 import Navbar from './Navbar';
 import { Route, Switch } from 'react-router-dom';
-import Home from './Home'; 
+import Home from './Home';
 import Menu from './Menu';
 import RecipeList from './RecipeList';
 import ShoppingList from './ShoppingList';
@@ -12,6 +11,7 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
+        <Home />
         <Switch>
           <Route exact path='/' render={() => <Home /> } />
           <Route exact path='/menu' render={() => <Menu />} />
