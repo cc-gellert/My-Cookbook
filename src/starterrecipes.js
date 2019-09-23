@@ -66,3 +66,5 @@ const starterRecipes = [
     image: 'https://images.unsplash.com/photo-1566918755129-8adaf6ff195d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1070&q=80'
   }
 ];
+
+export default starterRecipes; 

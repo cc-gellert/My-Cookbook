@@ -1,3 +1,6 @@
-.RecipeList {
-  background-image: url('recipelistimage.jpg');
+.RecipeList:hover {
+  color: rgb(161, 3, 3);
+}
+.cardtext:hover {
+  color: rgb(161, 3, 3);
 }
