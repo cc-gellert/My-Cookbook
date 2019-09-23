@@ -1,6 +1,8 @@
 .RecipeList:hover {
   color: rgb(161, 3, 3);
 }
-.cardtext:hover {
-  color: rgb(161, 3, 3);
+
+.newrecipebutton {
+  width: 350px;
+  margin: 20px;
 }

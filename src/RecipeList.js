@@ -6,6 +6,7 @@ import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
+import Button from 'react-bootstrap/Button';
 import './RecipeList.css';
 
 class RecipeList extends Component {
@@ -20,7 +21,8 @@ class RecipeList extends Component {
               <Card.Text>
                 {element.instructions}
               </Card.Text>
-              <a className="btn btn-dark btn-lg" href='#' role="button">Go To Recipe</a>
+              <a className="btn btn-dark btn-lg" href='#' role="button" style={{margin: '10px'}}>Go To Recipe</a>
+              <a className="btn btn-dark btn-lg" href='#' role="button">Add to Menu</a>
             </Card.Body>
           </Card>
         </Col>
@@ -29,6 +31,7 @@ class RecipeList extends Component {
     return (
       <div className='RecipeList'>
         <h1>Recipes List</h1>
+        <Button className='newrecipebutton' variant='success' href='#'>Add a New Recipe</Button>
         <Container>
           <Row>
             {recipes}
