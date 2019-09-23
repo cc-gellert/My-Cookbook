@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
-import NewRecipeForm from './NewRecipeForm';
+import './Recipe.css';
 
 class Recipe extends Component {
   render(){
     return (
       <div className='Recipe'>
-        //list recipes
-        //show new recipe NewRecipeForm
-        //set background image 
       </div>
     );
   }
