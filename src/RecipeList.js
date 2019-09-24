@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useContext } from 'react';
 import Recipe from './Recipe';
 import NewRecipeForm from './NewRecipeForm';
 import starterRecipes from './starterrecipes';
@@ -7,10 +7,12 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
+import { MenuContext } from './context/menu.context';
 import './RecipeList.css';
 
 class RecipeList extends Component {
   render(){
+    const { dispatch } = useContext(MenuContext);
     const recipes = starterRecipes.map(element => {
       return (
         <Col md={6} lg={4}>
@@ -21,8 +23,10 @@ class RecipeList extends Component {
               <Card.Text>
                 {element.instructions}
               </Card.Text>
-              <a className="btn btn-dark btn-lg" href='#' role="button" style={{margin: '10px'}}>Go To Recipe</a>
-              <a className="btn btn-dark btn-lg" href='#' role="button">Add to Menu</a>
+              <button className="btn btn-dark btn-lg" role="button" style={{margin: '10px'}}>Go To Recipe</button>
+              <button className="btn btn-dark btn-lg" role="button"
+              onClick={() => dispatch({type: 'ADD', item: element.name })
+              }>Add to Menu</button>
             </Card.Body>
           </Card>
         </Col>

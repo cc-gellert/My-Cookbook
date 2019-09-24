@@ -1,13 +1,13 @@
-import React, { useReducer } from 'react';
+import React from 'react';
 
-function ListReducer(state, action){
-  switch (action.type){
+function ListReducer(state, item){
+  switch (action.type) {
     case 'ADD':
-    return { state.push(action.item) };
+    return [ ...state, item ];
     case 'REMOVE':
-    return { state.filter(item => item != action.item)};
+    return state.filter(line => line != item);
     case 'RESET':
-    return {''};
+    return { state: '' };
     default:
     return state;
   }
