@@ -1,0 +1,15 @@
+.menu {
+  width: 50%;
+  text-align: center;
+}
+.button {
+  margin-bottom: 0px;
+}
+#carousel {
+  width: 65%;
+  height: 65%;
+  display: inline-block;
+}
+#carousel img {
+  object-fit: cover;
+}

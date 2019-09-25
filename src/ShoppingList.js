@@ -25,7 +25,7 @@ function ShoppingList() {
           <Button variant='warning' className='editButton'>Edit Shopping List</Button>
         </Col>
         <Col className='image'>
-          <footer>Photo by <a href='https://unsplash.com/@matthewpilachowski'>Matthew Pilachowski</a> on Unsplash</footer>
+          <footer>Photo by <a href='https://unsplash.com/@mrblairfraser'>Blair Fraser</a> on Unsplash</footer>
         </Col>
       </Row>
     </ShoppingListProvider>

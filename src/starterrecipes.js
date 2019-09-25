@@ -3,7 +3,7 @@ const starterRecipes = [
     name: 'Honey Roasted Carrots',
     ingredients:['Honey', 'Carrots', 'Salt', 'Pepper'],
     instructions: 'Turn oven on to 400 degrees. Peel carrots and cut off tops. Lay in single layer on pan, brush with honey, and season with salt and pepper. Roast in oven for 30 minutes or until soft.',
-    image: 'https://images.unsplash.com/photo-1522184216316-3c25379f9760?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
+    image: 'https://images.unsplash.com/photo-1522184216316-3c25379f9760?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60'
   },
   {
     name: 'Easiest Pumpkin Pie',
@@ -15,13 +15,13 @@ const starterRecipes = [
     name: 'Rosemary Steak',
     ingredients: ['Steak', 'Oil', 'Rosemary', 'Salt', 'Pepper'],
     instructions: 'Heat a pan up until hot with oil. Rub steak with rosemary, salt and pepper. Sear on one side until halfway to desired doneness, then flip.',
-    image: 'https://images.unsplash.com/photo-1560781290-7dc94c0f8f4f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80'
+    image: 'https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60'
   },
   {
     name: 'Sunday Morning Eggs',
     ingredients: ['Eggs', 'Butter', 'Salt', 'Pepper', 'Parsley', 'Chives'],
     instructions: 'Butter and heat up a pan until sizzling. Crack eggs into pan. Season with salt, pepper, chives, and parsley. Cook until yolk is to desired doneness.',
-    image: 'https://images.unsplash.com/photo-1518476381266-33596bddffc0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'
+    image: 'https://images.unsplash.com/photo-1515481774243-98fd57ff2bd4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60'
   },
   {
     name: 'Easy Roast Chicken',
@@ -33,31 +33,31 @@ const starterRecipes = [
     name: 'Tomato Basil Soup',
     ingredients: ['1 can of crushed tomatoes', 'Milk', 'Cream', 'Basil', 'Salt', 'Pepper'],
     instructions: 'Heat up a soup pot on the stove over low heat. Mix in the crushed tomatoes, milk, and cream. Stir together. Once gently simmering, add salt and pepper, then season with basil leaves.',
-    image: 'https://images.unsplash.com/photo-1514516702655-8d42ae4e8f89?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'
+    image: 'https://images.unsplash.com/photo-1472476443507-c7a5948772fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
   },
   {
     name: 'Fruit Bowl Appetizer',
     ingredients: ['Strawberries', 'Blackberries', 'Grapfruit', 'Oranges', 'Powdered sugar', 'Whipped cream'],
     instructions: 'Cut up berries. Peel and cut up oranges and grapefuit. Mix together in a bowl. Top with a bit of powdered sugar and a dollop of whipped cream.',
-    image: 'https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&auto=format&fit=crop&w=1862&q=80'
+    image: 'https://images.unsplash.com/photo-1467887633195-23e82423e499?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
   },
   {
     name: 'Heirloom Tomato Tart',
     ingredients: ['Heirloom Tomatoes', '1 pie crust', 'Basil', 'Mozzarella cheese', 'Oregano', 'Salt', 'Pepper'],
     instructions: 'Turn oven on to 400 degrees. Lay pie crust inside greased pie dish. Slice the tomatoes and mozzarella chese thinly and layer on top of pie crust. Top with basil, oregano, salt, and pepper. Roast in oven for 25 minutes.',
-    image: 'https://images.unsplash.com/photo-1507273026339-31b655f3752d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'
+    image: 'https://images.unsplash.com/photo-1503767849114-976b67568b02?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
   },
   {
     name: 'Dinner Party Appetizers Plate',
     ingredients: ['Prosciutto', 'Olives', 'Brie cheese', 'Bread', 'Salami'],
     instructions: 'Layer Prosciutto and salami on a decorative plate. Top with a few olives. Cut brie cheese into wedges and lay on separate plate. Slice bread and lay on the side. Offer guests wine as they arrive.',
-    image: 'https://images.unsplash.com/photo-1500482176473-ccba10e1e880?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'
+    image: 'https://images.unsplash.com/photo-1485963631004-f2f00b1d6606?ixlib=rb-1.2.1&auto=format&fit=crop&w=968&q=80'
   },
   {
     name: 'Spaghetti a la Rustica',
     ingredients: ['Spaghetti', 'Onion', 'Garlic', '1 can of crushed tomatoes', 'White wine', 'Olive Oil', 'Salt', 'Pepper'],
     instructions: 'Cook and drain spaghetti according to box instructions. Dice onions and mince garlic. Add olive oil to pan and cook over medium heat. Once hot add onions and garlic; saute until onions are translucent. Add white wine and simmer. Add salt, pepper, and crushed tomatoes. Toss in spaghetti and mix to coat.',
-    image: 'https://images.unsplash.com/photo-1522666257812-173fdc2d11fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80'
+    image: 'https://images.unsplash.com/photo-1548247661-3d7905940716?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
   },
   {
     name: 'The Best Mushroom Chicken',
@@ -67,4 +67,4 @@ const starterRecipes = [
   }
 ];
 
-export default starterRecipes; 
+export default starterRecipes;
