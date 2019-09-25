@@ -34,7 +34,7 @@ function RecipeList() {
     return (
       <div className='RecipeList'>
         <h1>Recipes List</h1>
-        <Button className='newrecipebutton' variant='success' href='#'>Add a New Recipe</Button>
+        <Button className='newrecipebutton btn btn-dark btn-lg' href='#'>Add a New Recipe</Button>
         <Container>
           <Row>
             {recipes}

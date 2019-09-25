@@ -1,0 +1,42 @@
+h1 {
+  font-weight: bold;
+  text-decoration: underline;
+  pointer-events: none;
+  margin: 25px;
+}
+footer {
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
+footer:hover {
+  color: rgb(161, 3, 3);
+}
+.image {
+  background: url('shoppinglistimage.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative left;
+  -moz-column-fill: auto; /* Firefox */
+  column-fill: auto;
+  height: 100vh;
+  width: 100vw;
+}
+.shoppinglist {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  position: relative right;
+}
+.ingredient {
+  font-size: 25px;
+  font-weight: bolder;
+  text-decoration: underline;
+  color: rgb(161, 3, 3);
+}
+.editButton {
+  margin: 25px;
+  font-size: 25px;
+}
