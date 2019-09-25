@@ -1,14 +1,13 @@
-import React, { Component, useContext } from 'react';
-import { MenuContext } from './context/menu.context'; 
+import React, { useContext } from 'react';
+import { MenuContext } from './context/menu.context';
 
-class Menu extends Component {
-  render(){
-    const { dispatch } = useContext(MenuContext);
-    return (
-      <div>
-      </div>
-    );
-  }
+function Menu() {
+  const { dispatch } = useContext(MenuContext);
+  return (
+    <div className='menu'>
+      <h1>This Week's Menu: </h1>
+    </div>
+  );
 };
 
 export default Menu;

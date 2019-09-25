@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ListReducer(state, item){
+function ListReducer(state, action, item){
   switch (action.type) {
     case 'ADD':
     return [ ...state, item ];
