@@ -1,6 +1,5 @@
 import React, { useState, useContext } from 'react';
 import Recipe from './Recipe';
-import NewRecipeForm from './NewRecipeForm';
 import starterRecipes from './starterrecipes';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
@@ -22,8 +21,8 @@ function RecipeList() {
             <Card.Text>
               {element.instructions}
             </Card.Text>
-            <button className="btn btn-dark btn-lg" role="button" style={{margin: '10px'}}>Go To Recipe</button>
-            <button className="btn btn-dark btn-lg" role="button"
+            <button className="btn btn-dark btn-lg" style={{margin: '10px'}}>Go To Recipe</button>
+            <button className="btn btn-dark btn-lg" 
             onClick={() => dispatch({type: 'ADD', item: element.name })
             }>Add to Menu</button>
           </Card.Body>
@@ -34,7 +33,7 @@ function RecipeList() {
     return (
       <div className='RecipeList'>
         <h1>Recipes List</h1>
-        <Button className='newrecipebutton btn btn-dark btn-lg' href='#'>Add a New Recipe</Button>
+        <Button className='newrecipebutton btn btn-dark btn-lg' href='/recipes/new'>Add a New Recipe</Button>
         <Container>
           <Row>
             {recipes}

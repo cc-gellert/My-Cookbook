@@ -5,6 +5,7 @@ import Home from './Home';
 import Menu from './Menu';
 import RecipeList from './RecipeList';
 import ShoppingList from './ShoppingList';
+import NewRecipeForm from './NewRecipeForm'; 
 import { ShoppingListProvider } from './context/shoppinglist.context';
 import { MenuProvider } from './context/menu.context';
 
@@ -19,6 +20,7 @@ function App() {
             <Route exact path='/menu' render={() => <Menu />} />
             <Route exact path='/recipes' render={() => <RecipeList />} />
             <Route exact path='/shoppinglist' render={() => <ShoppingList />} />
+            <Route exact path='/recipes/new' render={() => <NewRecipeForm />} />
           </Switch>
         </MenuProvider>
       </ShoppingListProvider>

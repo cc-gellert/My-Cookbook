@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Recipe.css';
 import Card from 'react-bootstrap/Card';
 import starterRecipes from './starterrecipes';

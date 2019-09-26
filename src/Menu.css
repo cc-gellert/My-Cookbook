@@ -1,3 +1,7 @@
+h1 {
+  color: red;
+  font-weight: bold;
+}
 .menu {
   width: 50%;
   text-align: center;
