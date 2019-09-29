@@ -13,18 +13,22 @@ import Form from 'react-bootstrap/Form';
 import './ShoppingList.css';
 
 function ShoppingList(props) {
-  const { shoppingList, dispatch } = useContext(ShoppingListContext);
+  const {shoppingList, dispatch} = useContext(ShoppingListContext);
   const [isEditing, toggleEditing] = useToggleState(false);
   const ingredientList = shoppingList.map(ingredient => {
     return (
       <li>
         {ingredient}{isEditing ? (
-          <IconButton aria-label='Delete'>
+          <IconButton aria-label='Delete' onClick={() => dispatch({ type: "REMOVE", add: ingredient })}>
               <DeleteIcon />
             </IconButton>) : ('')}
       </li>
     );
   });
+  const handleSubmit = e => {
+    e.preventDefault();
+    dispatch({ type: "ADD", add: e });
+  }
   return (
     <ShoppingListProvider>
       <EditingProvider>
@@ -34,10 +38,10 @@ function ShoppingList(props) {
             {ingredientList}
             {isEditing ? (
               <Container>
-                <Form>
-                  <Form.Group controlId="formRecipeName">
+                <Form onSubmit={handleSubmit}>
+                  <Form.Group controlId="formIngredient">
                     <Form.Label>Add Item to List</Form.Label>
-                    <Form.Control type="text" name='add' placeholder="Item" required />
+                    <Form.Control type="text" name='newItem' placeholder='item' required />
                   </Form.Group>
                   <Button variant="outline-danger" type="submit">
                     Add to List

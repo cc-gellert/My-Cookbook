@@ -15,11 +15,15 @@ function NewRecipeForm(){
         </Form.Group>
         <Form.Group controlId="formIngredients">
           <Form.Label>Ingredients</Form.Label>
-          <Form.Control type="text" name='ingredents' placeholder="1 Banana, 2 eggs, etc." required />
+          <Form.Control type="text" name='ingredients' placeholder="1 Banana, 2 eggs, etc." required />
         </Form.Group>
         <Form.Group controlId="formInstructions">
           <Form.Label>Instructions</Form.Label>
           <Form.Control as="textarea" rows='5' name='instructions' placeholder="Instructions" required />
+        </Form.Group>
+        <Form.Group controlId="formImage">
+          <Form.Label>Image URL</Form.Label>
+          <Form.Control type='text' name='image' placeholder="Image URL" required />
         </Form.Group>
         <Button variant="outline-danger" type="submit">
           Submit

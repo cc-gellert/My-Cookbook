@@ -5,7 +5,7 @@ import Home from './Home';
 import Menu from './Menu';
 import RecipeList from './RecipeList';
 import ShoppingList from './ShoppingList';
-import NewRecipeForm from './NewRecipeForm'; 
+import NewRecipeForm from './NewRecipeForm';
 import { ShoppingListProvider } from './context/shoppinglist.context';
 import { MenuProvider } from './context/menu.context';
 
