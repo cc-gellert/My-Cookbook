@@ -9,12 +9,15 @@ import { EditingProvider } from './context/editing.context';
 import useToggleState from './hooks/useToggleState';
 import DeleteIcon from '@material-ui/icons/Delete';
 import IconButton from "@material-ui/core/IconButton";
-import Form from 'react-bootstrap/Form';
+import NewShoppingItemForm from './NewShoppingItemForm';
 import './ShoppingList.css';
 
 function ShoppingList(props) {
   const {shoppingList, dispatch} = useContext(ShoppingListContext);
   const [isEditing, toggleEditing] = useToggleState(false);
+  const addToList = (item) => {
+    dispatch({ type: "ADD", add: item });
+  }
   const ingredientList = shoppingList.map(ingredient => {
     return (
       <li>
@@ -25,10 +28,6 @@ function ShoppingList(props) {
       </li>
     );
   });
-  const handleSubmit = e => {
-    e.preventDefault();
-    dispatch({ type: "ADD", add: e });
-  }
   return (
     <ShoppingListProvider>
       <EditingProvider>
@@ -37,17 +36,7 @@ function ShoppingList(props) {
             <h1>Shopping List</h1>
             {ingredientList}
             {isEditing ? (
-              <Container>
-                <Form onSubmit={handleSubmit}>
-                  <Form.Group controlId="formIngredient">
-                    <Form.Label>Add Item to List</Form.Label>
-                    <Form.Control type="text" name='newItem' placeholder='item' required />
-                  </Form.Group>
-                  <Button variant="outline-danger" type="submit">
-                    Add to List
-                  </Button>
-                </Form>
-              </Container>
+              <NewShoppingItemForm addToList={addToList} />
             ) : ''}
             <Button variant='warning' className='editButton' onClick={toggleEditing}>
             {isEditing ? 'Done Editing List' : 'Edit Shopping List'}</Button>
