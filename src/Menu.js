@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
-import { MenuContext } from './context/menu.context';
-import { MenuProvider } from './context/menu.context';
+import { MenuContext, MenuProvider } from './context/menu.context';
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 import './Menu.css';
@@ -17,7 +16,7 @@ function Menu() {
         />
         <Carousel.Caption>
           <h1>{item.name}</h1>
-          <Button variant='danger' className='button'>Remove from Menu</Button>
+          <Button variant='danger' className='button' onClick={() => dispatch({ type: 'REMOVE', name: item.name })}>Remove from Menu</Button>
         </Carousel.Caption>
       </Carousel.Item>
     );

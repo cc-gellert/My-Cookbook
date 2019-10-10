@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
-import { ShoppingListContext } from './context/shoppinglist.context';
-import { ShoppingListProvider } from './context/shoppinglist.context';
+import { ShoppingListContext, ShoppingListProvider } from './context/shoppinglist.context';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -10,6 +9,7 @@ import useToggleState from './hooks/useToggleState';
 import DeleteIcon from '@material-ui/icons/Delete';
 import IconButton from "@material-ui/core/IconButton";
 import NewShoppingItemForm from './NewShoppingItemForm';
+import uuid from 'uuid/v4';
 import './ShoppingList.css';
 
 function ShoppingList(props) {

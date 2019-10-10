@@ -33,7 +33,6 @@ footer:hover {
 .ingredient {
   font-size: 25px;
   font-weight: bolder;
-  text-decoration: underline;
   color: rgb(161, 3, 3);
 }
 .editButton {

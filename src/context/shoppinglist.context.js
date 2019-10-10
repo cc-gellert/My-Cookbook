@@ -1,5 +1,5 @@
 import React, { createContext, useReducer } from 'react';
-import shoppingListReducer from '../reducers/shoppingListReducer'; 
+import shoppingListReducer from '../reducers/shoppingListReducer';
 
 const defaultItems = ['bread', 'milk', 'orange juice', 'butter', 'bananas'];
 

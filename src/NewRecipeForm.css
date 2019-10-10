@@ -1,3 +1,9 @@
 .newrecipeform {
   width: 75%;
 }
+.button {
+  margin-right: 30px;
+}
+.gobackbutton {
+  color: #28a745; 
+}
