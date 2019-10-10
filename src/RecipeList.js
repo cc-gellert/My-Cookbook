@@ -24,8 +24,8 @@ function RecipeList() {
             </Card.Text>
             <button className="btn btn-dark btn-lg" style={{margin: '10px'}}>Go To Recipe</button>
             <button className="btn btn-dark btn-lg"
-            onClick={() => dispatch({type: 'ADD', item: element.name })
-            }>Add to Menu</button>
+            onClick={() => dispatch({type: 'ADD', name: element.name, image: element.image })
+          }>Add to Menu</button>
           </Card.Body>
         </Card>
       </Col>
